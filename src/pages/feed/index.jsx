@@ -26,10 +26,11 @@ const Feed = () => {
             </Column>
             <Column flex={1}>
               <TitleHighlight> # RANKING 5 TOP DA SEMANA </TitleHighlight>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={25}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={65}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={45}/>
-                <UserInfo nome="Pablo Henrique" image="https://avatars.githubusercontent.com/u/45184516?v=" percentual={72}/>
+                <UserInfo percentual={35} nome="Fernando Laterza" image={"https://avatars.githubusercontent.com/u/111194951?v=4"}/>
+                <UserInfo percentual={50} nome="Fernando Laterza" image={"https://avatars.githubusercontent.com/u/111194951?v=4"}/>
+                <UserInfo percentual={65} nome="Fernando Laterza" image={"https://avatars.githubusercontent.com/u/111194951?v=4"}/>
+                <UserInfo percentual={75} nome="Fernando Laterza" image={"https://avatars.githubusercontent.com/u/111194951?v=4"}/>
+                <UserInfo percentual={90} nome="Fernando Laterza" image={"https://avatars.githubusercontent.com/u/111194951?v=4"}/>
             </Column>
         </Container>
     </>
