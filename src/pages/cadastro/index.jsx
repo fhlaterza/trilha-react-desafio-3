@@ -13,7 +13,7 @@ import { Container, Title, TitleLogin, SubTitleLogin, LoginText, Column, Row, Ja
 
 
 const schema= yup.object({
-    nome: yup.string('Nome Inválido').required('Campo Obrigatório'),
+    nome: yup.string('Nome Inválido').min(3, 'No minimo 3 caracteres').required('Campo Obrigatório'),
     email: yup.string().email('email não é válido').required('Campo obrigatório'),
     password: yup.string().min(3, 'No minimo 3 caracteres').required('Campo obrigatório'),
   }).required();
@@ -33,6 +33,7 @@ const Cadastro = () => {
         try {
             const { data } = await api.post(`users?nome=${formData.nome}&email=${formData.email}&senha=${formData.password}`);
             console.log('retorno api', data);
+            navigate('/feed');
         } catch {
             alert('Houve um erro, tente novamente...')
         }
